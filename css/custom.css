@@ -1,0 +1,46 @@
+.container {
+    background-image: url("../images/bg.jpg");
+    background-repeat: repeat-x;
+}
+
+#sortable {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.crust {
+    margin-top: 15px;
+}
+
+.meat, .veggie, .drink {
+    margin-left: 20px;
+    width: 100px;
+    float: left;
+}
+
+#orderNow {
+    margin-top: 20px;
+}
+
+#orderLink {
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+}
