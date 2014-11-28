@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patrick's Pizza</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav nav-pills" id="tabList">
+        <li><a id="homeTab" href="#home" title="My home page">Home</a></li>
+        <li><a id="menuTab" href="#menu" title="Menu">Menu</a></li>
+        <li><a id="orderTab" href="#order" title="Order">Order</a></li>
+        <li><a id="locationTab" href="#location" title="Location">Location</a></li>
+        <li><a id="aboutTab" href="#about_us" title="About Us">About Us</a></li>
+    </ul>
+    <div id="home">
+        <header class="row">
+
+            <div class="col-md-8 col-sm-6">
+                <h1>Patrick's Pizza</h1>
+                <a id="phone" href="tel:(509) 724-3676" title="Call Us"><img src="images/call_us.jpg" class="img-responsive" alt="Call Us"/> </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/pizza_pepperoni.jpg" class="img-thumbnail hidden-xs" alt="logo"/>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 ">
+
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <h3>Fine Dining </h3>
+                <img src="images/fine_dining_pizza.jpg" class="img-responsive" alt="fine"/>
+                <p>
+                    Here at Patrick's Pizza we serve a variety of different pizzas from fine dining to stain my shirt messy pizzas. we feel that is is essential to have a well stocked fridge of fresh ingredients and we pride ourselves on making YOUR custom pizzas. We have the usual cheese and pepperoni pizzas and all that for those who just want the usual but we love to experiment, give us your best shot and we will to our best to make it good.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <header class="row">
+            <div class="col-md-8 col-sm-6">
+                <h1>Patrick's Menu</h1>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/pizza_pepperoni.jpg" class="img-thumbnail hidden-xs" alt="logo"/>
+            </div>
+            <div class="col-sm-6">
+                <a id="orderLink" href="#order" title="Order Now"><button>Finish Order</button></a>
+            </div>
+        </header>
+        <div class="row" >
+            <h3>Crusts $10.99 each</h3>
+            <div data-product="1000" class="crust col-md-3 col-sm-6">
+                <span data-name="Thin Crust">Thin and Crispy Crust</span>
+                <span data-price="10.99" ></span>
+                <img src="images/thinCrispy.png" class="img-responsive" alt="Thin and Crispy Crust"/>
+            </div>
+            <div data-product="1001" class="crust col-md-3 col-sm-6">
+                <span data-name="Stuff Crust">Stuffed Crust</span>
+                <span data-price="10.99" ></span>
+                <img src="images/thinCrispy.png" class="img-responsive" alt="Stuffed Crust"/>
+            </div>
+            <div data-product="1002" class="crust col-md-3 col-sm-6">
+                <span data-name="Hand Tossed">Hand Tossed</span>
+                <span data-price="10.99" ></span>
+                <img src="images/handToss.png" class="img-responsive" alt="Hand Tossed"/>
+            </div>
+            <div data-product="1003" class="crust col-md-3 col-sm-6">
+                <span data-name="Pan Crust">Pan Crust</span>
+                <span data-price="10.99" ></span>
+                <img src="images/pan.png" class="img-responsive" alt="Pan"/>
+            </div>
+
+            <h3>Meats $0.99 each</h3>
+            <div class="meat" data-product="1004">
+                <span data-name="Bacon">Bacon</span>
+                <span data-price="0.99"></span>
+                <img src="images/bacon.jpg" class="img-responsive" alt="Bacon"/>
+            </div>
+            <div class="meat" data-product="1005">
+                <span data-name="Ham">Ham</span>
+                <span data-price="0.99"></span>
+                <img src="images/ham.jpg" class="img-responsive" alt="Ham"/>
+            </div>
+            <div class="meat" data-product="1006">
+                <span data-name="Pork">Pork</span>
+                <span data-price="0.99"></span>
+                <img src="images/pork.jpg" class="img-responsive" alt="Pork"/>
+            </div>
+            <div class="meat" data-product="1007">
+                <span data-name="Sausage">Sausage</span>
+                <span data-price="0.99"></span>
+                <img src="images/sausage.jpg" class="img-responsive" alt="Sausage"/>
+            </div>
+            <div class="meat" data-product="1008">
+                <span data-name="Chicken">Chicken</span>
+                <span data-price="0.99"></span>
+                <img src="images/chicken.jpg" class="img-responsive" alt="Chicken"/>
+            </div>
+            <div class="meat" data-product="1009">
+                <span data-name="Pepperoni">Pepperoni</span>
+                <span data-price="0.99"></span>
+                <img src="images/pepperoni.jpg" class="img-responsive" alt="Pepperoni"/>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="col-xs-12">
+                <h3>Veggies $0.99 each</h3>
+                <div class="veggie" data-product="1010">
+                    <span data-name="Green Peppers">Peppers</span>
+                    <span data-price="0.99"></span>
+                    <img src="images/green_peppers.jpg" class="img-responsive" alt="Green Peppers"/>
+                </div>
+                <div class="veggie" data-product="1011">
+                    <span data-name="Mushrooms">Mushrooms</span>
+                    <span data-price="0.99"></span>
+                    <img src="images/mushrooms.jpg" class="img-responsive" alt="Mushrooms"/>
+                </div>
+                <div class="veggie" data-product="1012">
+                    <span data-name="Olives">Olives</span>
+                    <span data-price="0.99"></span>
+                    <img src="images/olives.jpg" class="img-responsive" alt="Olives"/>
+                </div>
+                <div class="veggie" data-product="1013">
+                    <span data-name="Onions">Onions</span>
+                    <span data-price="0.99"></span>
+                    <img src="images/onions.jpg" class="img-responsive" alt="Onions"/>
+                </div>
+                <div class="veggie" data-product="1014">
+                    <span data-name="Pineapple">Pineapple</span>
+                    <span data-price="0.99"></span>
+                    <img src="images/pineapple.jpg" class="img-responsive" alt="Pineapple"/>
+                </div>
+                <div class="veggie" data-product="1015">
+                    <span data-name="Tomato">Tomato</span>
+                    <span data-price="0.99"></span>
+                    <img src="images/tomato.jpg" class="img-responsive" alt="Tomato"/>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="col-xs-12">
+                <h3>Drinks $2.99 each</h3>
+                <div class="drink" data-product="1016">
+                    <span data-name='Coke'>Coke</span>
+                    <span data-price='2.99'></span>
+                    <img src="images/coke.jpg" class="img-responsive" alt="Coke"/>
+                </div>
+                <div class="drink" data-product="1017">
+                    <span data-name="Diet Coke">Diet Coke</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/diet_coke.jpg" class="img-responsive" alt="Diet Coke"/>
+                </div>
+                <div class="drink" data-product="1018">
+                    <span data-name="Diet Dr Pepper">Diet Dr Pepper</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/diet_dr_pepper.jpg" class="img-responsive" alt="Diet Dr Pepper"/>
+                </div>
+                <div class="drink" data-product="1019">
+                    <span data-name="Dr Pepper">Dr Pepper</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/dr_pepper.jpg" class="img-responsive" alt="Dr Pepper"/>
+                </div>
+                <div class="drink" data-product="1020">
+                    <span data-name="Grape Fanta">Grape Fanta</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/grape_fanta.jpg" class="img-responsive" alt="Grape Fanta"/>
+                </div>
+                <div class="drink" data-product="1021">
+                    <span data-name="Lemonade">Lemonade</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/lemonade.jpg" class="img-responsive" alt="Lemonade"/>
+                </div>
+                <div class="drink" data-product="1022">
+                    <span data-name="Root Beer">Root Beer</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/root_beer.jpg" class="img-responsive" alt="Root Beer"/>
+                </div>
+                <div class="drink" data-product="1023">
+                    <span data-name="Sprite">Sprite</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/sprite.jpg" class="img-responsive" alt="Sprite"/>
+                </div>
+                <div class="drink" data-product="1024">
+                    <span data-name="Water">Water</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/water.jpg" class="img-responsive" alt="Water"/>
+                </div>
+                <div class="drink" data-product="1025">
+                    <span data-name="Grape Fruit">Grape Fruit Minute Maid</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/grape_fruit.jpg" class="img-responsive" alt="Grape Fruit Minute Maid"/>
+                </div>
+                <div class="drink" data-product="1026">
+                    <span data-name="Orange Fanta">Orange Fanta</span>
+                    <span data-price="2.99"></span>
+                    <img src="images/orange_fanta.jpg" class="img-responsive" alt="Orange Fanta"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="order">
+        <header class="row">
+            <div class="col-md-8 col-sm-6">
+                <h1>Patrick's Pizza</h1>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/pizza_pepperoni.jpg" class="img-thumbnail hidden-xs" alt="logo"/>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 ">
+                <h3> Order </h3>
+				<div id="cartDiv">
+				
+				</div>
+									 <div>
+                    <button id="orderNow">Order Now</button>
+                </div>
+                <div>
+                    <button id="saveOrder">Save Order</button>
+                </div>
+                <div>
+                    <button id="loadOrder">Load Order</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <h3>Output (sortable)</h3>
+                <ul id="sortable">
+                    <li class="ui-state-default"><strong>E-mail:</strong></li>
+                    <li class="ui-state-default"><strong>Address:</strong></li>
+                    <li class="ui-state-default"><strong>Pizza:</strong></li>
+                    <li class="ui-state-default"><strong>Salad:</strong></li>
+                    <li class="ui-state-default"><strong>Soft Drink:</strong></li>
+                    <li class="ui-state-default"><strong>Delivery/Carry Out:</strong></li>
+                    <li class="ui-state-default"><strong>Total Cost:</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="location">
+        <header class="row">
+            <div class="col-md-8 col-sm-6">
+                <h1>Patrick's Pizza</h1>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/pizza_pepperoni.jpg" class="img-thumbnail hidden-xs" alt="logo"/>
+            </div>
+        </header>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6">
+                <script>
+                    navigator.geolocation.getCurrentPosition(function(pos) {
+                        var lat = pos.coords.latitude;
+                        var lng = pos.coords.longitude;
+                        $('#lat').text( lat );
+                        $('#lng').text( lng );
+                        var url = '<a href="http://maps.google.com/?q=' + lat + "," + lng + '">Your Location</a>';
+                        $("#url").append( url );
+                        var map = '<iframe width="350" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=834%20E%20Decatur%20Ave%2C%20Spokane%2C%20WA%2C%20United%20States&destination=1810%20N%20Greene%20St%2C%20Spokane%2C%20WA%2C%20United%20States&key=AIzaSyBQL8P_AcQtd9yxzc5TlRZvlPaOOkWIkwA"></iframe>';
+                        $('#map').html(map);
+                    })
+                </script>
+                Latitude: <span id="#lat"></span>
+                Longitude: <span id="#lng"></span>
+                Url: <span id="url"></span>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about_us">
+        <header class="row">
+            <div class="col-md-8 col-sm-6">
+                <h1>Patrick's Pizza</h1>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/pizza_pepperoni.jpg" class="img-thumbnail hidden-xs" alt="logo"/>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h3> About Us </h3>
+                <img src="images/pizza-heart.jpg" class="img-responsive" alt="love"/>
+                <p>
+                    We are a brand new pizza place on the corner of 3rd and main. We a a small establishment but we offer love in every bite because we know that it isn't just the pizza you are buying, we know you are buying us as well. We also deliver just call (509) 555-5978 we guarantee a speedy deliver because we know you like your pizza hot. Hope to hear from you soon.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        Patrick McManis &copy;2014
+    </footer>
+</div>
+<script src="js/respond.js"></script>
+<script type="text/javascript" src="js/jquery.layout.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/pizza_ui.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="js/cart.js"></script>
+</body>
+</html>
